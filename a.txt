@@ -22,3 +22,9 @@ int main() {
     return 0;
 }
 #done
+#include<stdio.h>
+main()
+{
+printf("Enter your name");
+return 0;
+}
