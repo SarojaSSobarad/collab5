@@ -1,1 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
+
+void swapUsingTemp(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int main() {
+    int a, b;
+
+    // Taking user input for the two numbers
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    // Swapping the numbers
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+    swapUsingTemp(&a, &b);
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+
